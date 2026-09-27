@@ -6,7 +6,6 @@ An AI-powered customer support agent for an e-commerce platform built with **Spr
 > - [Part 1 — RAG Can't Cancel Orders: Building a Transactional AI Agent with Spring Boot](https://medium.com/@dineshchandgr/rag-cant-cancel-orders-building-a-transactional-ai-agent-with-spring-boot-part-1-31a367f72796?sk=c4a00e4e7937bc01501333b3f1a8ccc0)
 > - [Part 2 — Code Walkthrough](#)
 >
-> 📦 **GitHub:** [dineschandgr/spring-ai-order-support-agent](https://github.com/dineschandgr/spring-ai-order-support-agent)
 
 ---
 
