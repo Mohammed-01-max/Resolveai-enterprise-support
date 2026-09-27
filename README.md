@@ -1,4 +1,4 @@
-# 🛍️ Spring AI Order Support Agent
+# 🛍️ Resolveai Order Support Agent
 
 An AI-powered customer support agent for an e-commerce platform built with **Spring AI 1.0**, **Google Gemini 2.5 Flash**, **Spring Boot 3.3**, and **React**. Demonstrates how to connect an LLM to live database data using Spring AI's `@Tool` annotation — no LangChain, no boilerplate.
 
