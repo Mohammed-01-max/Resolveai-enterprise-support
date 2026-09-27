@@ -1,0 +1,111 @@
+<svg viewBox="0 0 780 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect width="780" height="420" fill="#F8F9FA" rx="12"/>
+  <text x="390" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a2e">HeyCart — Entity Relationship Diagram</text>
+
+  <!-- CUSTOMER TABLE -->
+  <rect x="30" y="55" width="180" height="200" rx="8" fill="#fff" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="30" y="55" width="180" height="34" rx="8" fill="#3B82F6"/>
+  <rect x="30" y="77" width="180" height="12" fill="#3B82F6"/>
+  <text x="120" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">customer</text>
+  <line x1="30" y1="95" x2="210" y2="95" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="44" y="111" font-size="10" font-weight="600" fill="#1D4ED8">🔑 id</text>
+  <text x="200" y="111" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(10) PK</text>
+  <line x1="30" y1="117" x2="210" y2="117" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="133" font-size="10" fill="#374151">name</text>
+  <text x="200" y="133" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(100)</text>
+  <line x1="30" y1="139" x2="210" y2="139" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="155" font-size="10" fill="#374151">email</text>
+  <text x="200" y="155" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(100)</text>
+  <line x1="30" y1="161" x2="210" y2="161" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="44" y="177" font-size="10" fill="#374151">phone</text>
+  <text x="200" y="177" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(20)</text>
+  <line x1="30" y1="183" x2="210" y2="183" stroke="#F3F4F6" stroke-width="1"/>
+  <rect x="36" y="195" width="168" height="50" rx="4" fill="#EFF6FF"/>
+  <text x="120" y="210" text-anchor="middle" font-size="8.5" fill="#1D4ED8" font-weight="600">Constraints</text>
+  <text x="120" y="224" text-anchor="middle" font-size="8" fill="#374151">email UNIQUE NOT NULL</text>
+  <text x="120" y="237" text-anchor="middle" font-size="8" fill="#374151">name NOT NULL</text>
+
+  <!-- ORDERS TABLE -->
+  <rect x="290" y="55" width="200" height="280" rx="8" fill="#fff" stroke="#22C55E" stroke-width="2"/>
+  <rect x="290" y="55" width="200" height="34" rx="8" fill="#22C55E"/>
+  <rect x="290" y="77" width="200" height="12" fill="#22C55E"/>
+  <text x="390" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">orders</text>
+  <line x1="290" y1="95" x2="490" y2="95" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="304" y="111" font-size="10" font-weight="600" fill="#166534">🔑 id</text>
+  <text x="480" y="111" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(20) PK</text>
+  <line x1="290" y1="117" x2="490" y2="117" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="133" font-size="10" fill="#374151">🔗 customer_id</text>
+  <text x="480" y="133" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(10) FK</text>
+  <line x1="290" y1="139" x2="490" y2="139" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="155" font-size="10" fill="#374151">product_name</text>
+  <text x="480" y="155" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(200)</text>
+  <line x1="290" y1="161" x2="490" y2="161" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="177" font-size="10" fill="#374151">quantity</text>
+  <text x="480" y="177" text-anchor="end" font-size="9" fill="#6B7280">INT</text>
+  <line x1="290" y1="183" x2="490" y2="183" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="199" font-size="10" fill="#374151">total_amount</text>
+  <text x="480" y="199" text-anchor="end" font-size="9" fill="#6B7280">DECIMAL(10,2)</text>
+  <line x1="290" y1="205" x2="490" y2="205" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="221" font-size="10" fill="#374151">status</text>
+  <text x="480" y="221" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(20)</text>
+  <line x1="290" y1="227" x2="490" y2="227" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="304" y="243" font-size="10" fill="#374151">created_at</text>
+  <text x="480" y="243" text-anchor="end" font-size="9" fill="#6B7280">DATETIME</text>
+  <line x1="290" y1="249" x2="490" y2="249" stroke="#F3F4F6" stroke-width="1"/>
+  <rect x="298" y="258" width="184" height="68" rx="4" fill="#F0FDF4"/>
+  <text x="390" y="273" text-anchor="middle" font-size="8.5" fill="#166534" font-weight="600">status values</text>
+  <text x="390" y="287" text-anchor="middle" font-size="8" fill="#374151">PENDING · SHIPPED · DELIVERED</text>
+  <text x="390" y="300" text-anchor="middle" font-size="8" fill="#374151">CANCELLED · REFUND_REQUESTED</text>
+  <text x="390" y="314" text-anchor="middle" font-size="8" fill="#374151">DEFAULT: 'PENDING'</text>
+
+  <!-- PRODUCT TABLE -->
+  <rect x="570" y="55" width="185" height="220" rx="8" fill="#fff" stroke="#F97316" stroke-width="2"/>
+  <rect x="570" y="55" width="185" height="34" rx="8" fill="#F97316"/>
+  <rect x="570" y="77" width="185" height="12" fill="#F97316"/>
+  <text x="662" y="77" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">product</text>
+  <line x1="570" y1="95" x2="755" y2="95" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="584" y="111" font-size="10" font-weight="600" fill="#9A3412">🔑 id</text>
+  <text x="745" y="111" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(10) PK</text>
+  <line x1="570" y1="117" x2="755" y2="117" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="584" y="133" font-size="10" fill="#374151">name</text>
+  <text x="745" y="133" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(200)</text>
+  <line x1="570" y1="139" x2="755" y2="139" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="584" y="155" font-size="10" fill="#374151">description</text>
+  <text x="745" y="155" text-anchor="end" font-size="9" fill="#6B7280">TEXT</text>
+  <line x1="570" y1="161" x2="755" y2="161" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="584" y="177" font-size="10" fill="#374151">price</text>
+  <text x="745" y="177" text-anchor="end" font-size="9" fill="#6B7280">DECIMAL(10,2)</text>
+  <line x1="570" y1="183" x2="755" y2="183" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="584" y="199" font-size="10" fill="#374151">category</text>
+  <text x="745" y="199" text-anchor="end" font-size="9" fill="#6B7280">VARCHAR(50)</text>
+  <line x1="570" y1="205" x2="755" y2="205" stroke="#F3F4F6" stroke-width="1"/>
+  <text x="584" y="221" font-size="10" fill="#374151">stock</text>
+  <text x="745" y="221" text-anchor="end" font-size="9" fill="#6B7280">INT DEFAULT 0</text>
+  <line x1="570" y1="227" x2="755" y2="227" stroke="#F3F4F6" stroke-width="1"/>
+
+  <!-- PAYMENT TABLE -->
+  <rect x="290" y="360" width="200" height="50" rx="8" fill="#fff" stroke="#7C3AED" stroke-width="2"/>
+  <rect x="290" y="360" width="200" height="24" rx="8" fill="#7C3AED"/>
+  <rect x="290" y="372" width="200" height="12" fill="#7C3AED"/>
+  <text x="390" y="377" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">payment</text>
+  <text x="390" y="399" text-anchor="middle" font-size="9" fill="#6B7280">id · order_id (FK) · amount · method · status</text>
+
+  <!-- Relationships -->
+  <line x1="210" y1="133" x2="290" y2="133" stroke="#6B7280" stroke-width="1.5" marker-end="url(#erd-arr)"/>
+  <text x="222" y="126" font-size="9" fill="#6B7280">1</text>
+  <text x="272" y="126" font-size="9" fill="#6B7280">*</text>
+  <line x1="390" y1="335" x2="390" y2="360" stroke="#6B7280" stroke-width="1.5" marker-end="url(#erd-arr)"/>
+  <text x="398" y="350" font-size="9" fill="#6B7280">1:1</text>
+
+  <!-- Legend -->
+  <rect x="30" y="360" width="220" height="50" rx="8" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="140" y="378" text-anchor="middle" font-size="10" font-weight="600" fill="#334155">Relationships</text>
+  <text x="140" y="394" text-anchor="middle" font-size="9" fill="#475569">customer 1 ──── * orders</text>
+  <text x="140" y="407" text-anchor="middle" font-size="9" fill="#475569">orders 1 ──── 1 payment</text>
+
+  <defs>
+    <marker id="erd-arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6B7280"/>
+    </marker>
+  </defs>
+</svg>

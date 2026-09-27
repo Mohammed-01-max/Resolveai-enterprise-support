@@ -1,0 +1,123 @@
+<svg viewBox="0 0 900 590" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <rect width="900" height="590" fill="#F8F9FA" rx="12"/>
+  <text x="450" y="36" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a2e">Spring AI Order Support Agent — Architecture</text>
+
+  <!-- Tier Lanes -->
+  <rect x="20" y="55" width="240" height="470" rx="10" fill="#EAF4FF" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="140" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#1D4ED8" letter-spacing="1">TIER 1 — FRONTEND</text>
+  <text x="140" y="92" text-anchor="middle" font-size="10" fill="#3B82F6">React (Create React App)</text>
+
+  <rect x="290" y="55" width="290" height="470" rx="10" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="435" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#166534" letter-spacing="1">TIER 2 — BACKEND</text>
+  <text x="435" y="92" text-anchor="middle" font-size="10" fill="#22C55E">Spring Boot 3.3 + Spring AI 1.0</text>
+
+  <rect x="610" y="55" width="260" height="470" rx="10" fill="#FFF7ED" stroke="#FDB97D" stroke-width="1.5"/>
+  <text x="740" y="78" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412" letter-spacing="1">TIER 3 — DATA</text>
+  <text x="740" y="92" text-anchor="middle" font-size="10" fill="#F97316">MySQL 8 + Flyway</text>
+
+  <!-- Tier 1 -->
+  <rect x="40" y="108" width="200" height="40" rx="7" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="140" y="124" text-anchor="middle" font-size="11" font-weight="700" fill="#1E3A8A">HeyCart React App</text>
+  <text x="140" y="138" text-anchor="middle" font-size="9" fill="#6B7280">Store · My Orders · AI Support</text>
+
+  <rect x="40" y="158" width="200" height="28" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="140" y="177" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">ProductCatalog</text>
+
+  <rect x="40" y="196" width="200" height="28" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="140" y="215" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">PlaceOrder</text>
+
+  <rect x="40" y="232" width="200" height="28" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="140" y="251" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">OrderHistory</text>
+
+  <rect x="40" y="280" width="200" height="36" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1.5"/>
+  <text x="140" y="296" text-anchor="middle" font-size="10" font-weight="600" fill="#1D4ED8">ChatWindow</text>
+  <text x="140" y="309" text-anchor="middle" font-size="9" fill="#3B82F6">SSE streaming</text>
+
+  <!-- Tier 2 REST section -->
+  <rect x="298" y="148" width="274" height="174" rx="8" fill="#ECFDF5" stroke="#86EFAC" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="435" y="164" text-anchor="middle" font-size="9.5" font-weight="700" fill="#166534" letter-spacing="0.5">REST STACK</text>
+
+  <rect x="306" y="170" width="122" height="36" rx="6" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="367" y="185" text-anchor="middle" font-size="9.5" font-weight="600" fill="#166534">ProductController</text>
+  <text x="367" y="198" text-anchor="middle" font-size="8.5" fill="#4ADE80">/api/products</text>
+
+  <rect x="440" y="170" width="124" height="36" rx="6" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="502" y="185" text-anchor="middle" font-size="9.5" font-weight="600" fill="#166534">OrderController</text>
+  <text x="502" y="198" text-anchor="middle" font-size="8.5" fill="#4ADE80">/api/orders</text>
+
+  <line x1="367" y1="206" x2="367" y2="242" stroke="#22C55E" stroke-width="1.3" marker-end="url(#a-green)"/>
+  <line x1="502" y1="206" x2="502" y2="242" stroke="#22C55E" stroke-width="1.3" marker-end="url(#a-green)"/>
+
+  <rect x="306" y="244" width="122" height="36" rx="6" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="367" y="259" text-anchor="middle" font-size="9.5" font-weight="600" fill="#065F46">ProductRepository</text>
+  <text x="367" y="272" text-anchor="middle" font-size="8" fill="#047857">JPA · MySQL</text>
+
+  <rect x="440" y="244" width="124" height="36" rx="6" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="502" y="259" text-anchor="middle" font-size="9.5" font-weight="600" fill="#065F46">OrderRepository</text>
+  <text x="502" y="272" text-anchor="middle" font-size="8" fill="#047857">JPA · MySQL</text>
+
+  <!-- Tier 2 Chat stack -->
+  <rect x="306" y="340" width="258" height="36" rx="7" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.5"/>
+  <text x="435" y="356" text-anchor="middle" font-size="10.5" font-weight="700" fill="#166534">ChatController</text>
+  <text x="435" y="369" text-anchor="middle" font-size="8.5" fill="#4ADE80">POST /api/chat/stream → SSE</text>
+
+  <rect x="306" y="390" width="258" height="52" rx="7" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="435" y="409" text-anchor="middle" font-size="10.5" font-weight="700" fill="#065F46">AiChatService</text>
+  <text x="435" y="424" text-anchor="middle" font-size="8.5" fill="#047857">ChatClient · MessageWindowChatMemory (10 msg)</text>
+  <text x="435" y="437" text-anchor="middle" font-size="8.5" fill="#047857">Spring AI 1.0 · OpenAI Adapter · Flux&lt;String&gt;</text>
+
+  <rect x="306" y="456" width="258" height="72" rx="7" fill="#D1FAE5" stroke="#6EE7B7" stroke-width="1.5"/>
+  <text x="435" y="474" text-anchor="middle" font-size="10.5" font-weight="700" fill="#065F46">OrderToolService</text>
+  <text x="435" y="490" text-anchor="middle" font-size="8.5" fill="#047857">@Tool  getOrderStatus(orderId)</text>
+  <text x="435" y="504" text-anchor="middle" font-size="8.5" fill="#047857">@Tool  cancelOrder(orderId)</text>
+  <text x="435" y="518" text-anchor="middle" font-size="8.5" fill="#047857">@Tool  getOrderHistory · requestRefund</text>
+
+  <!-- Tier 3 -->
+  <rect x="628" y="108" width="222" height="150" rx="8" fill="#FFFFFF" stroke="#FDB97D" stroke-width="1.5"/>
+  <text x="739" y="130" text-anchor="middle" font-size="11" font-weight="700" fill="#9A3412">MySQL 8</text>
+  <line x1="628" y1="138" x2="850" y2="138" stroke="#FEE2BF" stroke-width="1"/>
+  <text x="739" y="156" text-anchor="middle" font-size="9" fill="#374151">Tables</text>
+  <text x="739" y="170" text-anchor="middle" font-size="9" fill="#6B7280">customer · product · orders · payment</text>
+  <line x1="628" y1="180" x2="850" y2="180" stroke="#FEE2BF" stroke-width="1"/>
+  <text x="739" y="197" text-anchor="middle" font-size="9" fill="#374151">Access</text>
+  <text x="739" y="212" text-anchor="middle" font-size="9" fill="#6B7280">Spring Data JPA + Hibernate</text>
+  <text x="739" y="226" text-anchor="middle" font-size="9" fill="#6B7280">HikariCP connection pool</text>
+  <text x="739" y="244" text-anchor="middle" font-size="9" fill="#6B7280">ddl-auto = none</text>
+
+  <rect x="628" y="278" width="222" height="90" rx="8" fill="#FEF3C7" stroke="#FDB97D" stroke-width="1.5"/>
+  <text x="739" y="300" text-anchor="middle" font-size="11" font-weight="700" fill="#92400E">Flyway Migrations</text>
+  <line x1="628" y1="308" x2="850" y2="308" stroke="#FDE68A" stroke-width="1"/>
+  <text x="739" y="330" text-anchor="middle" font-size="9.5" fill="#374151">V1__create_tables.sql</text>
+  <line x1="644" y1="342" x2="834" y2="342" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="739" y="358" text-anchor="middle" font-size="9.5" fill="#374151">V2__insert_seed_data.sql</text>
+
+  <!-- Gemini -->
+  <rect x="306" y="545" width="258" height="36" rx="8" fill="#F5F3FF" stroke="#C4B5FD" stroke-width="1.5"/>
+  <text x="435" y="560" text-anchor="middle" font-size="10.5" font-weight="700" fill="#5B21B6">Google Gemini 2.5 Flash</text>
+  <text x="435" y="573" text-anchor="middle" font-size="8.5" fill="#7C3AED">generativelanguage.googleapis.com</text>
+
+  <!-- Arrows -->
+  <line x1="240" y1="172" x2="298" y2="172" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#a-blue)"/>
+  <line x1="240" y1="210" x2="298" y2="210" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#a-blue)"/>
+  <line x1="240" y1="246" x2="298" y2="246" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#a-blue)"/>
+  <text x="264" y="195" text-anchor="middle" font-size="8" fill="#3B82F6">REST</text>
+  <line x1="240" y1="298" x2="306" y2="358" stroke="#3B82F6" stroke-width="1.8" marker-end="url(#a-blue)"/>
+  <text x="264" y="323" text-anchor="middle" font-size="8" fill="#3B82F6">SSE</text>
+  <line x1="435" y1="376" x2="435" y2="390" stroke="#22C55E" stroke-width="1.5" marker-end="url(#a-green)"/>
+  <line x1="435" y1="442" x2="435" y2="456" stroke="#22C55E" stroke-width="1.5" marker-end="url(#a-green)"/>
+  <line x1="428" y1="262" x2="628" y2="185" stroke="#F97316" stroke-width="1.8" marker-end="url(#a-orange)"/>
+  <text x="540" y="215" text-anchor="middle" font-size="8" fill="#F97316">JPA</text>
+  <line x1="564" y1="262" x2="628" y2="205" stroke="#F97316" stroke-width="1.6" marker-end="url(#a-orange)"/>
+  <line x1="564" y1="490" x2="628" y2="240" stroke="#F97316" stroke-width="1.6" stroke-dasharray="4,3" marker-end="url(#a-orange)"/>
+  <text x="614" y="360" font-size="8" fill="#F97316">JPA</text>
+  <line x1="739" y1="278" x2="739" y2="258" stroke="#F97316" stroke-width="1.5" marker-end="url(#a-orange)"/>
+  <line x1="435" y1="528" x2="435" y2="545" stroke="#7C3AED" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#a-purple)"/>
+  <text x="454" y="539" font-size="8" fill="#7C3AED">HTTPS</text>
+
+  <defs>
+    <marker id="a-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3B82F6"/></marker>
+    <marker id="a-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#22C55E"/></marker>
+    <marker id="a-orange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#F97316"/></marker>
+    <marker id="a-purple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7C3AED"/></marker>
+  </defs>
+</svg>
